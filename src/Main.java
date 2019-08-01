@@ -46,7 +46,7 @@ public class Main {
     PrintWriter out = new PrintWriter("myfile.txt", "UTF-8");//要处理异常，在main中加入throws ioException
     out.print(2);//从头开始写，原来的都清空
     out.print(" hi");
-    out.close();
+    out.close();//不close文件什么都没有
     Scanner in = new Scanner(Paths.get("myfile.txt"), "UTF-8");
     int t = in.nextInt();
     BigDecimal bigDecimal = BigDecimal.valueOf(d);
